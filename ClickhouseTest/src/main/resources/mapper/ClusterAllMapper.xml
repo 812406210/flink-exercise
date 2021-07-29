@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.clickhouse.app.mapper.ClusterAllMapper">
+    <resultMap id="BaseResultMap" type="com.clickhouse.app.entity.ClusterAll">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="website" jdbcType="VARCHAR" property="website" />
+        <result column="wechat" jdbcType="VARCHAR" property="wechat" />
+        <result column="FlightDate" jdbcType="VARCHAR" property="FlightDate" />
+        <result column="Year" jdbcType="VARCHAR" property="Year" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        id,website,wechat,FlightDate,`Year`
+    </sql>
+    <insert id="saveData" parameterType="com.clickhouse.app.entity.ClusterAll" >
+        INSERT INTO cluster3s1r_all
+        ( id,website,wechat,FlightDate,`Year`)
+        VALUES
+        (#{id,jdbcType=INTEGER},#{website,jdbcType=VARCHAR},#{wechat,jdbcType=VARCHAR},
+        #{FlightDate,jdbcType=VARCHAR},#{Year,jdbcType=VARCHAR})
+    </insert>
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from cluster3s1r_all
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <select id="selectList" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from cluster3s1r_all
+    </select>
+</mapper>

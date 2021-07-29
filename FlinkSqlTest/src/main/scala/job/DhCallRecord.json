@@ -1,0 +1,424 @@
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 2
+  },
+  "mappings":
+  {
+  "_doc": {
+    "dynamic": "false",
+    "properties": {
+      "id": {
+        "type": "long"
+      },
+      "call_source": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "type": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "app_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "tenant_id": {
+        "type": "long"
+      },
+      "tenant_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "tenant_line_id": {
+        "type": "long"
+      },
+      "call_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "remote_queue_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "remote_queue_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "queue_id": {
+        "type": "long"
+      },
+      "user_id": {
+        "type": "long"
+      },
+      "consultant_id": {
+        "type": "long"
+      },
+      "consultant_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "user_num": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "work_no": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "ext_num": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "called": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "caller": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "display_number_id": {
+        "type": "long"
+      },
+      "display_number": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "display_number_source": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "remote_group_id": {
+        "type": "long"
+      },
+      "display_number_group_id": {
+        "type": "long"
+      },
+      "remote_group_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "area_id": {
+        "type": "long"
+      },
+      "province_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "city_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "call_direct": {
+        "type": "long"
+      },
+      "ring_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "answer_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "start_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "end_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "ring_time_len": {
+        "type": "long"
+      },
+      "talk_time_len": {
+        "type": "long"
+      },
+      "total_time_len": {
+        "type": "long"
+      },
+      "drop_cause": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "telecom": {
+        "type": "long"
+      },
+      "hungup_flag": {
+        "type": "long"
+      },
+      "record_url": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "local_record_url": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "create_ts": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "bind_status": {
+        "type": "long"
+      },
+      "org_id": {
+        "type": "long"
+      },
+      "org_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org_level": {
+        "type": "long"
+      },
+      "parent_id": {
+        "type": "long"
+      },
+      "org_full_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org_full_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "defaulted": {
+        "type": "long"
+      },
+      "order_num": {
+        "type": "long"
+      },
+      "org1_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org2_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org3_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org4_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org5_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org6_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org1_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org2_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org3_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org4_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org5_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "org6_name": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
+}

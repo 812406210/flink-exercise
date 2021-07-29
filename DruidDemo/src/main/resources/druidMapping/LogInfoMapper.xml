@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.canal.druid.mapper.LogInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.canal.druid.entity.LogInfo">
+        <id column="__time" jdbcType="INTEGER" property="__time" />
+        <result column="latencyMs" jdbcType="VARCHAR" property="latencyMs" />
+        <result column="url" jdbcType="VARCHAR" property="url" />
+        <result column="user" jdbcType="VARCHAR" property="user" />
+    </resultMap>
+
+    <resultMap id="GroupByResultMap" type="com.canal.druid.entity.GroupByInfo">
+        <id column="number" jdbcType="INTEGER" property="number" />
+        <result column="latencyMs" jdbcType="VARCHAR" property="latencyMs" />
+    </resultMap>
+
+    <sql id="Base_Column_List">  __time,latencyMs,url,user </sql>
+
+    <select id="selectByLatencyMs" parameterType="java.lang.String" resultType="com.canal.druid.entity.LogInfo">
+        select <include refid="Base_Column_List"/> from topic_log_db where  latencyMs = #{latencyMs,jdbcType=VARCHAR}
+
+    </select>
+    <select id="groupByLatencyMs" resultType="com.canal.druid.entity.GroupByInfo">
+        select COUNT(*) as number ,latencyMs from topic_log_db group by latencyMs
+    </select>
+
+</mapper>
+

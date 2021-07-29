@@ -1,0 +1,2401 @@
+{
+  "properties": {
+    "cf": {
+      "properties": {
+        "3_day_finish_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "7_day_finish_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "_0": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "absence_count": {
+          "type": "integer"
+        },
+        "account_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ad": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ad_encoding": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "advertiser_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "advertiser_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "applet_sleep_days_count": {
+          "type": "integer"
+        },
+        "area_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "attend_actual": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "attend_end_teachunit": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "attend_end_teachunit_count": {
+          "type": "integer"
+        },
+        "attend_livetime_amount": {
+          "type": "double"
+        },
+        "attend_total": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "bank_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "base_service_days": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "birthday": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "call_busi_depart_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_busi_depart_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_business_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_business_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_consultant_level_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_consultant_level_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_corp_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_corp_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_depart_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_depart_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_group_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_legion_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_legion_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_quantum_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_quantum_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_seat_em": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_seat_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "call_seat_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "card_city_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "card_city_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "card_cycle_month_count": {
+          "type": "integer"
+        },
+        "card_cycle_week_count": {
+          "type": "integer"
+        },
+        "card_order_cycle_month_count": {
+          "type": "integer"
+        },
+        "card_order_cycle_week_count": {
+          "type": "integer"
+        },
+        "card_province_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "card_province_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "card_type_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "cert_no": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "cert_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "change_class_remark": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "channel_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_create_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "chat_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_number": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_online_center_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_online_chat_em": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_online_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_policy": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_robot_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_robot_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_site_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_sys_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "chat_transfer": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "city_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "city_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "class_adviser": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "code_name_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "collection_premium_amount": {
+          "type": "double"
+        },
+        "company_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "company_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "complain_time_max": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "complain_time_min": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "consultant_account": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "controlled_educate_amount": {
+          "type": "double"
+        },
+        "controlled_pure_educate_amount": {
+          "type": "double"
+        },
+        "controlled_training_amount": {
+          "type": "double"
+        },
+        "coupon_amount": {
+          "type": "double"
+        },
+        "coupon_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "coupon_college_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "coupon_college_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "coupon_create_user_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "coupon_family": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "coupon_family_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "create_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "current_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "delete_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "deposit_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "device_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "device_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ditch": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ditch_encoding": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dragnet_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "dragnet_order_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "duration_first_time": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "educate_amount": {
+          "type": "double"
+        },
+        "educate_amount_discount_rate": {
+          "type": "double"
+        },
+        "educate_amount_original": {
+          "type": "double"
+        },
+        "education": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "email": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "end_teachunit_count": {
+          "type": "integer"
+        },
+        "end_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "enroll_status": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "enroll_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "ent_package_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ent_province_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ent_province_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "etlTime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "etl_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "extend_warranty_period": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "family": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "family_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "finance_city_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "finance_city_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "finance_college_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "finance_college_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "first_head_teacher_em": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "first_head_teacher_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "first_proj_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "first_proj_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_college_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_college_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_family_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_family_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_group_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_assignment_tag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_business_unit_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_business_unit_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_center": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_center_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_corp_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_corp_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_depart_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_depart_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_group_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_legion_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_legion_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_studio_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "flow_studio_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "follow_log_state": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "follow_log_state_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "follow_state": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "freezed_period": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "front_sys_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "front_update_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "has_supple": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "hive_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "info_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "insure_amount": {
+          "type": "double"
+        },
+        "is_friend": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "is_sunlands_lite_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "ko_opp_create_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "last_freezed_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "last_live_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "last_unfreezed_date": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lastweek_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "lite_category_id_list": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "loan_amount": {
+          "type": "double"
+        },
+        "loan_method_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "loan_method_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "loan_training_amount": {
+          "type": "double"
+        },
+        "loan_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "mobile": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "mobile_hide": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "need_live_date_tod": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "need_live_date_yes": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "old_ord_company_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "old_ord_company_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "oppor_cycle_day_count": {
+          "type": "integer"
+        },
+        "oppor_cycle_month_count": {
+          "type": "integer"
+        },
+        "oppor_cycle_week_count": {
+          "type": "integer"
+        },
+        "oppor_order_cycle_day_count": {
+          "type": "integer"
+        },
+        "oppor_order_cycle_month_count": {
+          "type": "integer"
+        },
+        "oppor_order_cycle_week_count": {
+          "type": "integer"
+        },
+        "oppor_source": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "oppor_source_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "opportunity_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "opportunity_state_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "opportunity_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "ord_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "order_cycle": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "order_cycle_count": {
+          "type": "integer"
+        },
+        "order_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "original_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "parent_serial_no": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pay_method": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pay_method_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pay_method_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "payable_amount": {
+          "type": "double"
+        },
+        "payment_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "payment_month": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "payment_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "payment_week": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pc": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pc_sleep_days_count": {
+          "type": "integer"
+        },
+        "person_phone": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "person_phone_hide": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "person_qq": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "person_wechat": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pm_account": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "policy_no": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "project_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "project_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "promote_type_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "promote_url": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "promote_url_decode": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "protocol_province_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "protocol_province_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "protocol_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "province_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "province_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pure_educate_amount": {
+          "type": "double"
+        },
+        "pv_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pv_ip": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pv_ip_city": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pv_ip_city_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pv_ip_geolocation": {
+          "type": "geo_point"
+        },
+        "pv_ip_province": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pv_ip_province_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "qq_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "refund_time_max": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "refund_time_min": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "refunded_amount": {
+          "type": "double"
+        },
+        "reg_status": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "region_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "regist_site_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "regist_site_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "resp_account": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "rowkey": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "salemanager_aggkey": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "school_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "school_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sec_proj_degree": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sec_proj_degree_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sec_proj_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sec_proj_major": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sec_proj_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sem_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "serial_no": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "service_days_count": {
+          "type": "integer"
+        },
+        "service_days_educate_amount": {
+          "type": "double"
+        },
+        "service_end_date": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "sex": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "signup_status": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_call_business_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_call_business_unit_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_call_quantum_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_call_quantum_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_channel_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_city_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_city_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_project_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_project_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_province_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "site_province_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sitemonitor_call_aggkey": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sitemonitor_call_new_aggkey": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sitemonitor_flow_aggkey": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "skynet_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "stage_num": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "start_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "status_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "strategy_end_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "strategy_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "strategy_start_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "stu_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "student_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "student_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "sys_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "tag_ids": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "task_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "task_level": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "task_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "task_opp_create_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
+        },
+        "task_opportunity_create_time": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "task_opportunity_delete_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teach_college_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teach_college_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teacher_code_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teacher_code_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teacher_em": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teacher_group_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "teacher_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "third_proj_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "third_proj_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "third_proj_name_raw": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "third_proj_price": {
+          "type": "double"
+        },
+        "training_amount": {
+          "type": "double"
+        },
+        "uid": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "update_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "url": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "url_decode": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "url_md5": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "username": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "weChatNickName": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "website": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "website_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "website_name": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "weixin_bind_flag": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "weixin_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    },
+    "column_name": {
+      "type": "text",
+      "fields": {
+        "raw": {
+          "type": "keyword",
+          "ignore_above": 256
+        }
+      }
+    }
+  }
+}

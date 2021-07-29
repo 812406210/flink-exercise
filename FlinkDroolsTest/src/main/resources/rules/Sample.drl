@@ -1,0 +1,10 @@
+package ruls
+
+import com.ywj.domains.Person;
+
+rule "Hello World"
+    when
+       b:Person( age >= 18 );
+    then
+        System.out.println(b.getName()+"==================person================"+ b.getAge() );
+end

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="flink-shaded-hadoop-2-uber-2.6.5-10.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/flink-shaded-hadoop-2-uber-2.6.5-10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

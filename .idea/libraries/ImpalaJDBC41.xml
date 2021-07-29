@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ImpalaJDBC41">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ImpalaTest/lib/ImpalaJDBC41.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,18 @@
+
+mybatis-plus:
+  typeAliasesPackage: com.yangwj.phonix.entity
+  mapperLocations: classpath:mapper/*.xml
+
+logging:
+  level:
+    com.hushuo.datacenter.dao : debug
+server:
+  port: 8081
+
+hadoop.name-node: hdfs://uat-datacenter1:8020
+hadoop.namespace: /mydata
+
+hbase.zookeeper.quorum: uat-datacenter1
+hbase.zookeeper.port: 2181
+hbase.zookeeper.znode: /hbase
+hbase.client.keyvalue.maxsize: 1572864000

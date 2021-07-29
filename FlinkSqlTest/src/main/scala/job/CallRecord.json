@@ -1,0 +1,221 @@
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 2
+  },
+  "mappings":
+  {
+  "_doc": {
+    "dynamic": "false",
+    "properties": {
+      "callcenter_caller": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_id": {
+        "type": "long"
+      },
+      "callcenter_type": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_app_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_call_direct": {
+        "type": "long"
+      },
+      "record_call_duration": {
+        "type": "long"
+      },
+      "record_record_status": {
+        "type": "long"
+      },
+      "callcenter_local_record_url": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_create_ts": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "callcenter_end_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "callcenter_user_id": {
+        "type": "long"
+      },
+      "callcenter_tenant_line_id": {
+        "type": "long"
+      },
+      "record_call_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "callcenter_call_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_ring_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "record_stage": {
+        "type": "long"
+      },
+      "callcenter_total_time_len": {
+        "type": "long"
+      },
+      "callcenter_work_no": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_talk_time_len": {
+        "type": "long"
+      },
+      "callcenter_called": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_display_number": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_hungup_flag": {
+        "type": "long"
+      },
+      "callcenter_record_url": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_consultant_id": {
+        "type": "long"
+      },
+      "callcenter_ext_num": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "record_opportunity_id": {
+        "type": "long"
+      },
+      "record_call_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "record_type": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "record_id": {
+        "type": "long"
+      },
+      "record_mobile": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_answer_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "record_create_time": {
+        "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+        "type": "date"
+      },
+      "callcenter_queue_id": {
+        "type": "long"
+      },
+      "callcenter_ring_time_len": {
+        "type": "long"
+      },
+      "callcenter_tenant_id": {
+        "type": "long"
+      },
+      "callcenter_remote_queue_id": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      },
+      "callcenter_drop_cause": {
+        "type": "text",
+        "fields": {
+          "raw": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }
+      }
+    }
+  }
+}
+}

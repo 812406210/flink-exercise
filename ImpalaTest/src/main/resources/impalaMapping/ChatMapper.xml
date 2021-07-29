@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.canal.app.mapper.ImpalaMapper">
+
+    <resultMap id="BaseResultMap" type="com.canal.app.entity.Chat">
+        <id column="key" jdbcType="INTEGER" property="key" />
+        <result column="chat_name" jdbcType="VARCHAR" property="chatName" />
+        <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+    </resultMap>
+    <sql id="Base_Column_List">
+        `key`,chat_name,create_time,remark
+    </sql>
+
+    <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select <include refid="Base_Column_List"/> from hive_chat_hbase_table where `key` = #{key,jdbcType=INTEGER}
+    </select>
+
+
+    <insert id="insertChat" parameterType="com.canal.app.entity.Chat">
+        insert into hive_chat_hbase_table(`key`,chat_name,create_time,remark) values(#{key},#{chatName},#{createTime},#{remark});
+    </insert>
+
+    <update id="updateChat" parameterType="com.canal.app.entity.Chat">
+         update hive_chat_hbase_table
+            <set >
+                <if test="chatName != null">
+                    chat_name = #{chatName},
+                </if>
+                <if test="createTime != null">
+                    create_time = #{createTime},
+                </if>
+                <if test="remark != null">
+                    remark = #{remark},
+                </if>
+            </set>
+         where `key` = #{key}
+    </update>
+
+
+
+
+</mapper>
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="sunlands-snapshots" />
+      <option name="name" value="sunlands snapshots mirror" />
+      <option name="url" value="http://192.168.1.216:8100/archiva/repository/snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-releases" />
+      <option name="name" value="dorisdb-maven-releases" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-releases" />
+      <option name="name" value="dorisdb-maven-releases" />
+      <option name="url" value="http://dorisdbvisitor:dorisdbvisitor134@nexus.dorisdb.com/repository/maven-releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hushuo-snapshots" />
+      <option name="name" value="hushuo snapshots mirror" />
+      <option name="url" value="http://106.52.12.167:8081/repository/hushuo_snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://maven.aliyun.com/repository/central" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-snapshots" />
+      <option name="name" value="dorisdb-maven-snapshots" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sunlands-public" />
+      <option name="name" value="sunlands public mirror" />
+      <option name="url" value="http://192.168.1.216:8100/archiva/repository/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-snapshots" />
+      <option name="name" value="dorisdb-maven-snapshots" />
+      <option name="url" value="http://dorisdbvisitor:dorisdbvisitor134@nexus.dorisdb.com/repository/maven-snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hushuo_snapshots" />
+      <option name="name" value="虎硕私服" />
+      <option name="url" value="http://106.52.12.167:8081/repository/hushuo_snapshots/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-releases" />
+      <option name="name" value="dorisdb-maven-releases" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hushuo_releases" />
+      <option name="name" value="虎硕私服" />
+      <option name="url" value="http://106.52.12.167:8081/repository/hushuo_releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dorisdb-maven-snapshots" />
+      <option name="name" value="dorisdb-maven-snapshots" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="shangdemirror" />
+      <option name="name" value="尚德镜像" />
+      <option name="url" value="http://172.16.117.215:8100/archiva/repository/public/" />
+    </remote-repository>
+  </component>
+</project>

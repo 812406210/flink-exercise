@@ -1,0 +1,461 @@
+{
+  "settings": {
+    "number_of_shards": 3,
+    "number_of_replicas": 2
+  },
+  "mappings": {
+    "_doc": {
+      "dynamic": "false",
+      "properties": {
+        "opportunity_promotion_type_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_tenant_id": {
+          "type": "long"
+        },
+        "callcenter_caller": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_app_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_state": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_call_direct": {
+          "type": "integer"
+        },
+        "opportunity_create_user_id": {
+          "type": "long"
+        },
+        "opportunity_hidden_status": {
+          "type": "integer"
+        },
+        "record_call_duration": {
+          "type": "integer"
+        },
+        "record_record_status": {
+          "type": "integer"
+        },
+        "opportunity_abandon_status": {
+          "type": "integer"
+        },
+        "callcenter_end_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "callcenter_user_id": {
+          "type": "long"
+        },
+        "opportunity_create_user_account": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_tenant_line_id": {
+          "type": "long"
+        },
+        "opportunity_get_status": {
+          "type": "integer"
+        },
+        "opportunity_student_id": {
+          "type": "long"
+        },
+        "callcenter_call_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_oppor_source": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_create_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_update_user_id": {
+          "type": "long"
+        },
+        "callcenter_total_time_len": {
+          "type": "integer"
+        },
+        "opportunity_intention": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_friend_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_update_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_valid_follow_counts": {
+          "type": "integer"
+        },
+        "callcenter_work_no": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_talk_time_len": {
+          "type": "integer"
+        },
+        "callcenter_called": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_abandon_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_apply_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_get_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_province_id": {
+          "type": "long"
+        },
+        "callcenter_ext_num": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "record_call_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_first_valid_follow_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "record_mobile": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_answer_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "record_create_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "callcenter_ring_time_len": {
+          "type": "integer"
+        },
+        "opportunity_carrier": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_user_account": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_carrier_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_id": {
+          "type": "long"
+        },
+        "opportunity_allocate_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_second_consult_status": {
+          "type": "integer"
+        },
+        "opportunity_user_id": {
+          "type": "long"
+        },
+        "opportunity_follow_time": {
+          "format": "yyyy-MM-dd HH:mm:ss",
+          "type": "date"
+        },
+        "opportunity_delete_flag": {
+          "type": "integer"
+        },
+        "callcenter_local_record_url": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_create_ts": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_org_id1": {
+          "type": "long"
+        },
+        "opportunity_org_id2": {
+          "type": "long"
+        },
+        "opportunity_org_id3": {
+          "type": "long"
+        },
+        "opportunity_org_id4": {
+          "type": "long"
+        },
+        "opportunity_valid_follow_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_org_id5": {
+          "type": "long"
+        },
+        "record_call_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "callcenter_ring_time": {
+          "format": "yyyy-MM-dd HH:mm:ss || yyyy-MM-dd",
+          "type": "date"
+        },
+        "opportunity_silence_status": {
+          "type": "integer"
+        },
+        "record_stage": {
+          "type": "integer"
+        },
+        "opportunity_site_source": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_display_number": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_first_proj_id": {
+          "type": "long"
+        },
+        "callcenter_hungup_flag": {
+          "type": "integer"
+        },
+        "opportunity_last_follow_consultant_id": {
+          "type": "long"
+        },
+        "callcenter_record_url": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_consultant_id": {
+          "type": "long"
+        },
+        "opportunity_advertiser_code": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "record_opportunity_id": {
+          "type": "long"
+        },
+        "opportunity_table_id": {
+          "type": "long"
+        },
+        "record_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_promotion_method": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_site_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "record_id": {
+          "type": "integer"
+        },
+        "opportunity_promotion_type": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_advertiser": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_queue_id": {
+          "type": "long"
+        },
+        "callcenter_tenant_id": {
+          "type": "long"
+        },
+        "callcenter_remote_queue_id": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "callcenter_drop_cause": {
+          "type": "text",
+          "fields": {
+            "raw": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "opportunity_city_id": {
+          "type": "long"
+        }
+      }
+    }
+  }
+}

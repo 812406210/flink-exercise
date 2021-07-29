@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>FlinkSql</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>ImpalaTest</module>
+        <module>ClickhouseTest</module>
+        <module>FlinkSqlTest</module>
+        <module>DruidDemo</module>
+        <module>PhonixTest</module>
+        <module>Tesseract</module>
+        <module>FlinkCDC</module>
+        <module>FlinkDataStream</module>
+        <module>PulsarTest</module>
+        <module>DorisTest</module>
+        <module>ZookeeperTest</module>
+        <module>FlinkCdcHive</module>
+        <module>FlinkML</module>
+        <module>CanalTest</module>
+        <module>FlinkClickhouseTest</module>
+        <module>FlinkDroolsTest</module>
+        <module>Neo4jTest</module>
+    </modules>
+    <!--全局版本控制-->
+    <properties>
+        <java.version>1.8</java.version>
+        <springboot.version>2.0.5.RELEASE</springboot.version>
+    </properties>
+
+        <dependencies>
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba</groupId>-->
+<!--                <artifactId>fastjson</artifactId>-->
+<!--                <version>1.2.72</version>-->
+<!--            </dependency>-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.junit.vintage</groupId>
+                        <artifactId>junit-vintage-engine</artifactId>
+                    </exclusion>
+                </exclusions>
+                <version>${springboot.version}</version>
+            </dependency>
+
+            <!--        <dependency>-->
+            <!--            <groupId>impala</groupId>-->
+            <!--            <artifactId>impala-jdbc41</artifactId>-->
+            <!--            <version>2.6.4.1005</version>-->
+            <!--        </dependency>-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.0.29</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>1.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.14</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.75</version>
+            </dependency>
+    </dependencies>
+
+</project>
