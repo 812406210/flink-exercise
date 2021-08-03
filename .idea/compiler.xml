@@ -15,16 +15,16 @@
         <module name="FlinkSqlTest" />
         <module name="FlinkCDC" />
         <module name="CanalTest" />
-        <module name="FlinkML" />
         <module name="ClickhouseTest" />
         <module name="DruidDemo" />
         <module name="FlinkDataStream" />
         <module name="druidTest" />
         <module name="ZookeeperTest" />
+        <module name="PulsarTest" />
         <module name="Neo4jTest" />
         <module name="FlinkCdcHive" />
         <module name="PhonixTest" />
-        <module name="PulsarTest" />
+        <module name="FlinkML" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
