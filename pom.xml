@@ -26,6 +26,8 @@
         <module>FlinkClickhouseTest</module>
         <module>FlinkDroolsTest</module>
         <module>Neo4jTest</module>
+        <module>Leetcode</module>
+        <module>EsWebTest</module>
     </modules>
     <!--全局版本控制-->
     <properties>

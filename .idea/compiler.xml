@@ -10,8 +10,10 @@
         <module name="FlinkClickhouseTest" />
         <module name="DorisTest" />
         <module name="ImpalaTest" />
+        <module name="Leetcode" />
         <module name="Tesseract" />
         <module name="FlinkDroolsTest" />
+        <module name="EsWebTest" />
         <module name="FlinkSqlTest" />
         <module name="FlinkCDC" />
         <module name="CanalTest" />
@@ -30,6 +32,7 @@
     <bytecodeTargetLevel>
       <module name="druidTest" target="1.8" />
       <module name="DruidTest" target="1.8" />
+      <module name="EsTest" target="1.5" />
       <module name="sqlTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
