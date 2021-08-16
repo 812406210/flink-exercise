@@ -1,0 +1,50 @@
+//分组查询
+//mysql sql
+SELECT DATE_FORMAT(create_ts,'%Y-%m-%d') as time, tenant_id,caller, COUNT(*) ,SUM(total_time_len) FROM call_record GROUP BY tenant_id,caller,DATE_FORMAT(create_ts,'%Y-%m-%d');
+//es 查询
+GET dh_callrecord_v1/_search
+{
+  "from": 0,
+  "size": 0,
+  "query": {
+    "bool": {}
+  },
+  "aggs": {
+    "by_day":{
+      "date_histogram": {
+        "field": "create_ts",
+        "interval": "day"
+      }
+    ,
+      "aggs": {
+        "by_tenant_id": {
+          "terms": {
+            "field": "tenant_id",
+            "order": {
+              "_term": "asc"
+            }
+          },
+          "aggs": {
+            "by_caller": {
+              "terms": {
+                "field": "caller"
+              },
+              "aggs": {
+                "total_all_time": {
+                  "sum": {
+                    "field": "total_time_len"
+                  }
+                }
+              }
+            },
+            "total_time":{
+              "sum": {
+                "field": "total_time_len"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
