@@ -11,6 +11,7 @@
 
     <artifactId>FlinkCdcHive</artifactId>
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <flink12.version>1.12.0</flink12.version>
         <scala.binary.version>2.11</scala.binary.version>
         <!--        flink-cdc版本为1.3.0，支持binlog文件和pos启动-->
@@ -23,14 +24,12 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-hive_2.11</artifactId>
             <version>1.12.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
 
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-api-java-bridge_2.11</artifactId>
             <version>1.12.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table-planner-blink -->
@@ -38,7 +37,6 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table-planner-blink_2.11</artifactId>
             <version>1.12.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.hadoop/hadoop-common -->
@@ -49,19 +47,24 @@
         <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-hadoop-compatibility -->
 
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-hadoop-compatibility_2.11</artifactId>
-            <version>1.12.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-hadoop-compatibility_2.11</artifactId>-->
+<!--            <version>1.12.0</version>-->
+<!--        </dependency>-->
 
         <!-- Hive Dependency -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-exec</artifactId>
             <version>1.1.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
+        <dependency>
+            <groupId>org.apache.hive</groupId>
+            <artifactId>hive-jdbc</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-metastore -->
         <dependency>
@@ -83,7 +86,6 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-shaded-hadoop-2-uber</artifactId>
             <version>2.6.5-7.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
 
         <dependency>
@@ -105,34 +107,32 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-streaming-java_2.11</artifactId>
             <version>1.12.0</version>
-            <!--<scope>provided</scope>-->
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-clients -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-clients_2.11</artifactId>
-            <version>1.12.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-clients_2.11</artifactId>-->
+<!--            <version>1.12.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-core -->
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-core</artifactId>
-            <version>1.12.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-core</artifactId>-->
+<!--            <version>1.12.0</version>-->
+<!--        </dependency>-->
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.44</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>mysql</groupId>-->
+<!--            <artifactId>mysql-connector-java</artifactId>-->
+<!--            <version>5.1.44</version>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <version>1.2.72</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka -->
@@ -143,18 +143,18 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-            <version>3.2.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>redis.clients</groupId>-->
+<!--            <artifactId>jedis</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.bahir/flink-connector-redis -->
-        <dependency>
-            <groupId>org.apache.bahir</groupId>
-            <artifactId>flink-connector-redis_2.11</artifactId>
-            <version>1.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.bahir</groupId>-->
+<!--            <artifactId>flink-connector-redis_2.11</artifactId>-->
+<!--            <version>1.0</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-elasticsearch-base -->
 <!--        <dependency>-->
@@ -176,11 +176,11 @@
             <version>1.12.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.flink</groupId>
-            <artifactId>flink-statebackend-rocksdb_2.11</artifactId>
-            <version>1.12.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.apache.flink</groupId>-->
+<!--            <artifactId>flink-statebackend-rocksdb_2.11</artifactId>-->
+<!--            <version>1.12.0</version>-->
+<!--        </dependency>-->
 
 
         <dependency>
@@ -208,7 +208,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>1.7.25</version>
-            <!--        <scope>test</scope>-->
         </dependency>
 
         <dependency>
@@ -242,8 +241,6 @@
             <version>1.7.25</version>
         </dependency>
     </dependencies>
-
-
     <build>
         <plugins>
             <!-- 编译插件 -->
@@ -266,7 +263,6 @@
                     <scalaCompatVersion>2.11</scalaCompatVersion>
                     <scalaVersion>2.11.12</scalaVersion>
                     <encoding>UTF-8</encoding>
-                    <addScalacArgs>-target:jvm-1.8</addScalacArgs>
                 </configuration>
                 <executions>
                     <execution>
@@ -299,7 +295,7 @@
                     <archive>
                         <manifest>
                             <!-- 可以设置jar包的入口类(可选) -->
-                            <mainClass>MySqlBinlogSourceExample</mainClass>
+                            <mainClass>hive.Demo1ComputeGenderIndex</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -315,5 +311,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

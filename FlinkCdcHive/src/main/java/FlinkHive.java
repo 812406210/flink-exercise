@@ -24,7 +24,7 @@ public class FlinkHive {
         String version = "1.1.0";       // Hive版本号
 
         HiveCatalog hive = new HiveCatalog(name, defaultDatabase, hiveConfDir, hiveConfDir,version);
-        StatementSet statementSet = tableEnv.createStatementSet();
+//        StatementSet statementSet = tableEnv.createStatementSet();
 
         tableEnv.registerCatalog(name, hive);
         tableEnv.useCatalog(name);
