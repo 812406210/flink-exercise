@@ -13,7 +13,7 @@ import org.neo4j.ogm.annotation.Property;
  * @program: FlinkSql
  * @description:
  * @author: yang
- * @create: 2021-07-08 14:40
+ * @create:
  */
 @NodeEntity(label = "dept")
 @Data

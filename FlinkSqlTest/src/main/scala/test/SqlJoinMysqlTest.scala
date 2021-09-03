@@ -22,9 +22,9 @@ object SqlJoinMysqlTest {
   def main(args: Array[String]): Unit = {
     //1、环境准备
     val env = StreamExecutionEnvironment.getExecutionEnvironment
-    //   env.setStateBackend(new FsStateBackend("hdfs://123.207.27.238:8020/flink/mysql/checkpoints"))
+    env.setStateBackend(new FsStateBackend("hdfs://hadoop101:8020/flink/mysql/checkpoints"))
    // env.setStateBackend(new FsStateBackend("file:///D://tmp//flink/mysql"))
-    env.setStateBackend(new FsStateBackend("file:///root/flink1.11/flink-1.11.3/job/checkpoint"))
+//    env.setStateBackend(new FsStateBackend("file:///root/flink1.11/flink-1.11.3/job/checkpoint"))
     env.enableCheckpointing(8000)
     env.getCheckpointConfig.setCheckpointingMode(CheckpointingMode.EXACTLY_ONCE)
     env.getCheckpointConfig.setMaxConcurrentCheckpoints(2)

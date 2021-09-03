@@ -12,7 +12,7 @@ import org.neo4j.ogm.annotation.*;
  * @program: FlinkSql
  * @description:
  * @author: yang
- * @create: 2021-07-08 14:41
+ * @create:
  */
 @RelationshipEntity(type = "relationShip")
 @Data

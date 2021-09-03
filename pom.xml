@@ -28,6 +28,7 @@
         <module>Neo4jTest</module>
         <module>Leetcode</module>
         <module>EsWebTest</module>
+        <module>FlinkHive</module>
     </modules>
     <!--全局版本控制-->
     <properties>

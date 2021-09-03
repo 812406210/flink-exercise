@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
  * @program: FlinkSql
  * @description:
  * @author: yang
- * @create: 2021-07-08 11:37
+ * @create:
  * 如果有druid的依赖，但是没有配置数据源，就要加上exclude = {DataSourceAutoConfiguration.class}
  */
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})

@@ -7,7 +7,7 @@ import java.sql.*;
  * @program: FlinkSql
  * @description:
  * @author: yang
- * @create: 2021-07-07 16:12
+ * @create:
  */
 public class Neo4jDemo {
     //https://neo4j.com/docs/cypher-manual/4.3/clauses/

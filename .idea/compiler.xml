@@ -14,9 +14,10 @@
         <module name="Tesseract" />
         <module name="FlinkDroolsTest" />
         <module name="EsWebTest" />
-        <module name="FlinkSqlTest" />
+        <module name="FlinkHive" />
         <module name="FlinkCDC" />
         <module name="CanalTest" />
+        <module name="FlinkSqlTest" />
         <module name="ClickhouseTest" />
         <module name="DruidDemo" />
         <module name="FlinkDataStream" />
@@ -29,12 +30,6 @@
         <module name="FlinkML" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="druidTest" target="1.8" />
-      <module name="DruidTest" target="1.8" />
-      <module name="EsTest" target="1.5" />
-      <module name="sqlTest" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

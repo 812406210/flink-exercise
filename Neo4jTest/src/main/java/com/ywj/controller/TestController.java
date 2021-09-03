@@ -8,16 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * @program: FlinkSql
  * @description:
  * @author: yang
- * @create: 2021-07-08 14:43
+ * @create:
  */
 @RestController
 public class TestController {
@@ -67,6 +64,19 @@ public class TestController {
     public RelationShip get(Long id){
         Optional<RelationShip> byId = relationShipRepository.findById(id);
         return byId.orElse(null);
+    }
+
+
+    @GetMapping("getTree")
+    public List<RelationShip> getTree(Long id){
+        Iterable<RelationShip> byIds = relationShipRepository.findAll(id.intValue());
+        Iterator<RelationShip> iterator = byIds.iterator();
+        System.out.println(byIds);
+        List<RelationShip> relationShips = new ArrayList<>();
+        while (iterator.hasNext()){
+            relationShips.add(iterator.next());
+        }
+        return relationShips;
     }
 
     @GetMapping("deleteRelationShip")

@@ -7,7 +7,7 @@ import com.ywj.config.EsClientConfig;
 import com.ywj.service.AdverisePageService;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.client.RestHighLevelClient;
+
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
